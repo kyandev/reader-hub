@@ -1,0 +1,47 @@
+body{
+    
+    background-color: #8d60df !important;
+}
+.Loginform{
+    width: 350px ;
+    height: 400px;
+    background: #fff;
+}
+input{
+    height: 40px;
+    outline: none;
+}
+
+/* 
+h1{
+
+    font-style: italic ;
+    
+}
+#form{
+    background-color: white;
+    width: 25%;
+    margin: 120px auto;
+    padding: 50px ;
+    box-shadow: 10px 10px 5px rgb(82,11,77);
+    border-radius: 50px;
+    
+
+}
+#btn{
+    color: white;
+    background-color: rgb(105, 15, 190);
+    border-radius: 10px;
+    font-style: oblique;
+    box-shadow: 2px 3px 0.5px black ;
+    padding: 5px;
+    font-size: medium;
+}
+@media screen and (max-width:700px){
+    #form{
+        width: 65%;
+        padding: 40px;
+    }
+
+}
+     */

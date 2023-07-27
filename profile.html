@@ -1,0 +1,47 @@
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assest/css/signup.css">
+        <link rel="stylesheet" href="/assest/css/bootstrap.min.css">
+        <title>Profile</title>
+        <link rel="icon" href="./assest/img/Logos/book-stack.png">
+    </head>
+    <body>
+            <nav
+            class="navbar navbar-expand-lg bg-dark font-monospace " style="user-select: none;">
+            <div class="container-fluid">
+                <div class="d-flex justify-content-center align-items-center">
+                    <a class="navbar-brand text-light font-monospace">
+                        <img style="width: 10rem; user-select: none; " src="./assest/img/Logos/Lovepik_com-400276526-book-linear-icon.png" alt>
+                    </a>
+                    <div class="container-fluid">
+                        
+                        
+                </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </body>
+    <script type="module">
+        // imports
+        import firebase from "./assest/js/firebase.js";
+        let app = firebase.units;
+        let auth = firebase.auth
+        let database = firebase.database
+
+        auth.onAuthStateChanged(app.auth, function(e){
+            if(e){
+                let uid = e.uid
+                // userName
+                database.get(database.ref(app.database,`${uid}`)).then((e)=>{
+                    let displayName = e.val()['displayName'];
+                    
+                    document.title = `${displayName} Profile`
+                })
+            }
+        })
+    </script>
+</html>

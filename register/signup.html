@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assest/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assest/css/signup.css">
+        <script src="../assest/js/userTypes.js"></script>
+        <link rel="icon" href="../assest/img/Logos/book-stack.png">
+        <title>Creat account</title>
+    </head>
+    <body>
+        <div class="img"
+            style="background-image: url('../assest/img//wallpaper.jpg'); ">
+            <div class="container mt-5  d-flex justify-content-center p-3">
+                <form id="form">
+
+                    <div style="user-select: none;"
+                        class="text-light text-center fs-1 font-monospace text">
+                        SignUp</div>
+                    <input type="text" class="p-2 w-100 form-control" id="Display_Name" placeholder="DisplayName" required >
+                    <br>
+
+                    <input type="text" class="p-2 w-100 form-control"
+                        id="username" placeholder="User" minlength="5"
+                        maxlength="8"  required>
+                    <br>
+                    <input type="email" class="p-2 w-100 form-control"
+                        id="email"
+                        placeholder="Email" required><br>
+                    <input type="password" class="p-2 w-100 form-control"
+                        id="passwd"
+                        placeholder="password" required><br>
+
+                    <input type="password" class="p-2 w-100 form-control"
+                        id="C_passwd"
+                        placeholder=" confirm password" required><br>
+
+                    <select name id="type" class="p-2 w-100 mb-4 rounded">
+                        <option value selected disabled>Please Select</option>
+                        <option id="writer">writer</option>
+                        <option id="reader">reader</option>
+                    </select>
+
+                    <!-- create account btn -->
+                    <button class="btn btn-primary" id="signUpBtn" name="signup" value="signup">
+                        
+                        <span id="createAccountText" style="display: block;">Create Account</span>
+
+                        <span id="createAccountSpinner" class="justify-content-center align-items-center" style="display: none;">
+                            <span class="spinner-border"></span>
+                        </span>
+                    </button>
+                    <!-- spinner for create acccount -->
+                    <br>
+                    <div>
+                        <button onclick="Go()" class="al text-light text-center">
+                            Already Have Account</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </body>
+    <script src="../assest/js/db.js" type="module"></script>
+    <script>
+        if(localStorage.getItem('type')){
+            document.getElementById('type').style.display = "none";
+        }else{
+            document.getElementById('writer').value = new userType().WRITER
+            document.getElementById('reader').value = new userType().READER
+        }
+
+        document.getElementById("type").addEventListener('change', (e) => {
+            localStorage.setItem('type', e.target.value)
+        })
+
+        function Go(){
+            location.href="../index.html"
+        }
+
+    </script>
+</html>

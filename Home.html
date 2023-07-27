@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="./assest/css/dashboard.css">
+        <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+        <link rel="icon" href="./assest/img/Logos/book-stack.png">
+        <script src="./assest/js/bootstrap.bundle.min.js"></script>
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <nav
+            class="navbar navbar-expand-lg bg-dark font-monospace ">
+            <div class="container-fluid">
+
+                <div class="d-flex justify-content-center align-items-center">
+
+                    <a class="navbar-brand text-light font-monospace">
+                        <img style="width: 10rem;" src="./assest/img/Logos/Lovepik_com-400276526-book-linear-icon.png" alt>
+                    </a>
+
+                    <button id="profile" style=" background:none; border: none; ">
+
+                        <img id="user5" src="./assest/img/icons/user.png" alt="user" style="user-select: none; width: 45px; " />
+                    
+                    </button>
+
+                    <script>
+                        document.getElementById("profile").onclick = () => {
+                            
+                            location.href = "./profile.html";
+                        }
+                    </script>
+
+                </div>
+
+                <button class="navbar-toggler btn btn-warning " type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarSupportedContent">
+                    <div class="dropdown me-5">
+                        <a class="btn btn-light dropdown-toggle  rounded-5"
+                            href="#"
+                            role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            الاقسام
+                        </a>
+
+                        <ul id="ulsection" class="dropdown-menu  ">
+                            <li><a class="dropdown-item" href="#">رعب</a></li>
+                            <li><a class="dropdown-item" href="#"> ديني</a></li>
+                            <li><a class="dropdown-item" href="#">برمجة</a></li>
+                            <li><a class="dropdown-item" href="#">وعلم
+                                    نفس</a></li>
+                        </ul>
+                        <button id="btn2">
+
+                            <a  href="./writers.html">الكتاب</a>
+
+                        </button>
+                    </div>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 rounded-4"
+                            type="search"
+                            placeholder="البحث" aria-label="Search">
+                        <button class="btn btn-outline-success rounded-4"
+                            type="submit">بحث</button>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </body>
+    <script type="module">
+        
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyD8goCPxMDey5B9f5hxl2OMZwKnEz9YE1o",
+            authDomain: "kyan-b2434.firebaseapp.com",
+            databaseURL: "https://kyan-b2434-default-rtdb.firebaseio.com",
+            projectId: "kyan-b2434",
+            storageBucket: "kyan-b2434.appspot.com",
+            messagingSenderId: "975438894207",
+            appId: "1:975438894207:web:61a68ab809b524b97f1b4a",
+            measurementId: "G-7R55E23LHM"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        onAuthStateChanged(auth, function(e){
+            if(e){
+                let uid = e.uid
+                
+            }
+        })
+
+
+
+    </script>
+</html>

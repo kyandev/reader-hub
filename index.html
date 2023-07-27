@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="./assest/css/signup.css">
+        <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+        <link rel="icon" href="./assest/img/Logos/book-stack.png">
+
+    </head>
+    <body>
+        <div class="img"
+            style="background-image: url('./assest/img/wallpaper.jpg'); ">
+            <div class="container mt-5  d-flex justify-content-center p-3">
+                <form id="form">
+                    <div style="user-select: none;"
+                        class="text-light text-center fs-1 font-monospace text">
+                        Login</div>
+                    <input type="text" style="user-select: none;"
+                        class="p-2 w-100 form-control" id="username"
+                        placeholder="User" minlength="5" maxlength="8" required><br>
+                    <input type="password" style="user-select: none;"
+                        class="p-2 w-100 form-control" id="passwd"
+                        placeholder="password" required><br>
+                    <button class="btn btn-primary" type="submit" id="loginBtn">
+                        <span style="display: block;" id="logIn">LogIn</span>
+
+                        <span id="logInAccountSpinner"
+                            class="justify-content-center align-items-center"
+                            style="display: none;">
+                            <span class="spinner-border"></span>
+                        </span>
+                    </button>
+
+                    <br>
+
+                    <div>
+                        <button type="button"
+                            onclick="location.href='./register/select.html'"
+                            class="al text-light text-center">
+                            Donot Have Account</button>
+                    </div> 
+
+                </div>
+            </form>
+        </div>
+    </body>
+
+    <script src="./assest/js/data.js" type="module"></script>
+
+</html>
