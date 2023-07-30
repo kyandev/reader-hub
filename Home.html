@@ -7,10 +7,20 @@
             href="./assest/css/dashboard.css">
         <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
         <link rel="icon" href="./assest/img/Logos/book-stack.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Katibeh&family=Rakkas&display=swap"
+            rel="stylesheet">
+            
         <script src="./assest/js/bootstrap.bundle.min.js"></script>
-        <title>Dashboard</title>
+
+        <title>بوابة القارئ</title>
     </head>
     <body>
+        <!-------------- navbar ------------------>
+
         <nav
             class="navbar navbar-expand-lg bg-dark font-monospace ">
             <div class="container-fluid">
@@ -18,13 +28,17 @@
                 <div class="d-flex justify-content-center align-items-center">
 
                     <a class="navbar-brand text-light font-monospace">
-                        <img style="width: 10rem;" src="./assest/img/Logos/Lovepik_com-400276526-book-linear-icon.png" alt>
+                        <img style="width: 10rem; user-select: none; "
+                            src="./assest/img/Logos/Lovepik_com-400276526-book-linear-icon.png"
+                            alt>
                     </a>
 
-                    <button id="profile" style=" background:none; border: none; ">
+                    <button id="profile"
+                        style=" background:none; border: none; ">
 
-                        <img id="user5" src="./assest/img/icons/user.png" alt="user" style="user-select: none; width: 45px; " />
-                    
+                        <img id="user5" src="./assest/img/icons/user.png "
+                            alt="user" style="user-select: none; width: 45px; " />
+
                     </button>
 
                     <script>
@@ -47,7 +61,7 @@
                 <div class="collapse navbar-collapse justify-content-end"
                     id="navbarSupportedContent">
                     <div class="dropdown me-5">
-                        <a class="btn btn-light dropdown-toggle  rounded-5"
+                        <a class="btn btn-light dropdown-toggle  rounded-3"
                             href="#"
                             role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -58,29 +72,305 @@
                             <li><a class="dropdown-item" href="#">رعب</a></li>
                             <li><a class="dropdown-item" href="#"> ديني</a></li>
                             <li><a class="dropdown-item" href="#">برمجة</a></li>
-                            <li><a class="dropdown-item" href="#">وعلم
-                                    نفس</a></li>
+                            <li><a class="dropdown-item" href="#">وعلم نفس</a></li>
+                            <li><a class="dropdown-item" href="#">اخر</a></li>
                         </ul>
-                        <button id="btn2">
+                        <button id="btn2" class="btn btn-light">
 
-                            <a  href="./writers.html">الكتاب</a>
+                            <a href="./writers.html">الكتاب</a>
 
                         </button>
                     </div>
 
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 rounded-4"
-                            type="search"
+                        <input  class="form-control me-2 rounded-3"
+                            type="search" 
                             placeholder="البحث" aria-label="Search">
-                        <button class="btn btn-outline-success rounded-4"
+                        <button class="btn btn-outline-warning rounded-3"
                             type="submit">بحث</button>
 
                     </form>
                 </div>
             </div>
         </nav>
-    </body>
-    <script type="module">
+        <!-------------- navbar  end ------------------>
+
+        <!-----------banner----------->
+
+        <div
+            style="display: flex;justify-content: space-around;margin-top: 100px;"
+            class="res p-3">
+            <div class="fs-3 fw-bolder mb-2">
+                <h1 style="color:#252E48; font-size: 32px; font-weight: 700; "
+                    class="anmation rf-h1 hero-text-box ">
+
+                    <span> بوابة القارئ</span> هي بوابتك الى عالم الابداع
+
+                    <div
+                        style=" width: auto; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; font-size: 16px; color:#545F7E;"
+                        class="mt-5 hero-text-box">
+                        <p>اترك العنان لتفكيرك وقم بتاليف الرويات الخاصة بك
+                            وانشرها علي منصة بوابة القارئ <br> واجعل الجميع
+                            يقرئوها</p>
+                    </div>
+
+                    <!--==-->
+                    <div class="hero-text-box">
+                        <label style="margin-top: 20px; width: 360px;"
+                            class="label show"><input class="form__input "
+                                aria-label="Your Email" id="signupEmail"
+                                name="email" type="email"
+                                placeholder="قم بارسال تقييمك لنا">
+                            <!--==-->
+                            <div class="input-icon"><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24"
+                                    viewBox="0 0 24 24">
+                                    <g transform="translate(2 3)">
+                                        <path data-name="Message"
+                                            d="M14.939,18H5.06A5.061,5.061,0,0,1,0,12.95V5.05A5.061,5.061,0,0,1,5.06,0h9.879a5.091,5.091,0,0,1,3.58,1.481A5.012,5.012,0,0,1,20,5.05v7.9A5.061,5.061,0,0,1,14.939,18ZM4.034,5.246A.733.733,0,0,0,3.5,5.47a.764.764,0,0,0-.071,1l.131.13L8.11,10.15a3.129,3.129,0,0,0,1.95.68,3.18,3.18,0,0,0,1.958-.68L16.53,6.54l.08-.08a.774.774,0,0,0-.012-1,.831.831,0,0,0-.528-.26h-.042a.76.76,0,0,0-.519.2L11,9a1.565,1.565,0,0,1-1,.36A1.592,1.592,0,0,1,9,9L4.5,5.4A.778.778,0,0,0,4.034,5.246Z"
+                                            fill="#7683a8"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                        </label>
+                        <!--==-->
+                        <br>
+                        <button
+                            class=" open-button btn p-2 text-light btn-send user-select-none">
+                            
+                            ارسل التقييم</button>
+                        <!--==-->
+
+                        <button
+                            class="open-button btn p-2 text-light btn-send">
+                            انشر روايتك</button>
+                        <!--==-->
+                        <!--==-->
+                        <!--==-->
+                    </div>
+                </div>
+                <!--==-->
+                <!--==-->
+                <!--==-->
+                <div>
+                    <img class="rounded-3 img hero-img-box"
+                        style="width: 350px;"
+                        src="./assest/img/Logos/book-stack.png" alt>
+                </div>
+            </div>
+
+            <!-----------end banner----------->
+
+            <!-----------trust line----------->
+
+            <div style="display: flex; justify-content: center; user-select: none; "
+                class=" mt-5">
+                <fieldset class="line">
+                    <legend>
+                        <span>
+                            موثوق به من قبل <b>100+ </b>مستخدم و <b>250+</b>
+                            كاتب</span>
+                    </legend>
+                </fieldset>
+            </div>
+
+            <!-----------end trust line----------->
+            <!----------- treanding books----------->
+
+            <div style="color:#252E48; user-select: none;"
+                class="fs-1 fw-bolder text-center mb-5 mt-3 font-monospace">
+                الكتب الرائجة </div>
+
+            <!-----------end treanding books----------->
+
+            <div
+                class="container p-2 d-flex justify-content-center align-content-center text-center ">
+                <div class="row ">
+
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/images (48).jpeg" alt>
+                            <br>
+                            <div class="fs-6 mb-2" style="user-select: none;" >اسم الرواية</div>
+                            <div class="d-flex justify-content-center">
+
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                    خيري</div>
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                    قراءة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book one--------------------->
+
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/images (46).jpeg" alt>
+                            <br>
+                            <div class="fs-6 mb-2" style="user-select: none;" >اسم الرواية</div>
+
+                            <div class="d-flex justify-content-center">
+
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                    خيري</div>
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                    قراءة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book two--------------------->
+
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/imagesad.jpeg" alt> <br>
+
+                            <div class="fs-6 mb-2" style="user-select: none;" >اسم الرواية</div>
+
+                            <div class="d-flex justify-content-center">
+
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                    خيري</div>
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                    قراءة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book three--------------------->
+
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/images (51).jpeg" alt>
+                            <br>
+                            <div class="fs-6 mb-2" style="user-select: none;">اسم الرواية</div>
+
+                            <div class="d-flex">
+
+                                <div class="d-flex justify-content-center">
+
+                                    <div
+                                        class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                        خيري</div>
+                                    <div
+                                        class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                        قراءة</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book four--------------------->
+
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/images (55).jpeg" alt>
+                            <br>
+                            <div class="fs-6 mb-2">اسم الرواية</div>
+                            <div class="d-flex justify-content-center">
+
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                    خيري</div>
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                    قراءة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book five--------------------->
+
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/images (58).jpeg" alt>
+                            <br>
+                            <div class="fs-6 mb-2">اسم الرواية</div>
+                            <div class="d-flex justify-content-center">
+
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                    خيري</div>
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                    قراءة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book sex--------------------->
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/images (50).jpeg" alt>
+                            <br>
+
+                            <div class="fs-6 mb-2">اسم الرواية</div>
+
+                            <div class="d-flex justify-content-center">
+
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                    خيري</div>
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                    قراءة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book sex--------------------->
+                    <div
+                        class="col-sm-12 col-md-6 col-lg-3 mb-3 d-flex justify-content-center flex-colmun  ">
+                        <div class=" p-2 border-black rounded-3">
+                            <img class="img-card mb-2 rounded-2"
+                                src="./assest/img/books/images (56).jpeg" alt>
+                            <br>
+
+                            <div class="fs-6 mb-2">اسم الرواية</div>
+
+                            <div class="d-flex">
+
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark me-2">محمد
+                                    خيري</div>
+                                <div
+                                    class="btn btn-outline-warning fs-4 fw-semibold text-dark px-5">
+                                    قراءة</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!----------------------book sex--------------------->
+                </div>
+            </div>
+            <!-----------footer----------->
+            <div class="bg-dark text-center fs-2 fw-bold text-light" style="user-select: none;">
+                <div> © كل الحقوق محفوظة </div>
+                <div class="fs-6">Desigend by KYAN & Karl_0
+                    <br>
+                    &
+                    <br>
+                    MonoSpace </div>
+            </div>
+            <!-----------end footer----------->
+
+        </body>
+        <!-- -----Script------ -->
+        <script type="module">
         
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
         import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
@@ -109,4 +399,4 @@
 
 
     </script>
-</html>
+    </html>

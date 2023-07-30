@@ -32,10 +32,47 @@ font-style: italic;
     border: none;
 }
 
-@media (max-width:375px){
+/* @media (max-width:375px){
     .media-query{
         display: flex !important;
         justify-content: center !important;
         flex-direction: column !important;
     }
+
+}
+/* #btn{
+    border-radius: 50px;
+    border: none;
+    background-color: #FFC107;
+    font-family: 'Oswald', sans-serif;
+    width: 200px;
+} */
+#btn{
+    border-radius: 50px;
+    border: none;
+    background-color: #FFC107;
+    width: 175px;
+    margin-top: 10px;
+    height: 40px;
+    font-size: x-large;
+    user-select: none;
+
+
+
+}
+
+
+.h8{
+    font-family: REM', sans-serif';
+}
+.h7{
+
+    font-family: 'Fira Sans', sans-serif;
+}
+#read{
+    background-image: url('/assest/img/wallpaper.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 98vh; 
+    width: 99%;
 }

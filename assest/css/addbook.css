@@ -1,0 +1,11 @@
+body{
+
+    background-image: url('/assest/img/wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+}
+#btn{
+    outline:none;
+}

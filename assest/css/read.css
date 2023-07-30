@@ -1,0 +1,7 @@
+#body{
+    background-image: url('./assest/img/wallpaper.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    height: 100vh; 
+    width: 100%;
+}

@@ -1,47 +1,41 @@
 body{
-    
-    background-color: #8d60df !important;
+    overflow-x: hidden;
 }
-.Loginform{
-    width: 350px ;
-    height: 400px;
-    background: #fff;
+.offcanvas{
+    width: 300px !important;
 }
-input{
+.list-style-group{
+    cursor: pointer;
+}
+.Input-style
+{
+
+    width: 230px;
+    height: 300px;
+    background-image: url(/assest/img/icons/photos.png);
+
+    background-repeat: no-repeat;
+    background-size: 220px 250px;
+}
+.Input-style-add
+{
+
+
     height: 40px;
+    background-image: url(/assest/img/icons/photos.png);
+
+    background-repeat: no-repeat;
+    background-size: 220px 250px;
+}
+.Input-style::before {
+    width: 150px;
+}
+.input{
     outline: none;
 }
-
-/* 
-h1{
-
-    font-style: italic ;
-    
+input,
+::placeholder {
+    direction: rtl;
+    text-align: start;
+    unicode-bidi: plaintext;
 }
-#form{
-    background-color: white;
-    width: 25%;
-    margin: 120px auto;
-    padding: 50px ;
-    box-shadow: 10px 10px 5px rgb(82,11,77);
-    border-radius: 50px;
-    
-
-}
-#btn{
-    color: white;
-    background-color: rgb(105, 15, 190);
-    border-radius: 10px;
-    font-style: oblique;
-    box-shadow: 2px 3px 0.5px black ;
-    padding: 5px;
-    font-size: medium;
-}
-@media screen and (max-width:700px){
-    #form{
-        width: 65%;
-        padding: 40px;
-    }
-
-}
-     */
